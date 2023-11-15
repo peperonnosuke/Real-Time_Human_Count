@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title>{{ title }}</title>
+       <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+   </head>
+   <body>
+       <h1>Real-Time Human Count</h1>
+       <p>これはリアルタイムで人物を検知するWebアプリケーションです</p>
+       <p>画像上部には検出人数が記述されています</p>
+       <img src="{{ url_for('video_feed') }}">
+   </body>
+</html>
